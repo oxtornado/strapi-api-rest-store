@@ -88,7 +88,3 @@ Para poblar la base de datos, puedes usar generadores de datos como:
 - [Mockaroo](https://www.mockaroo.com/)
 - [Faker.js](https://fakerjs.dev/)
 
----
-
-Este documento servirá como guía para la implementación del caso de estudio de proveedores, productos y categorías.
-
