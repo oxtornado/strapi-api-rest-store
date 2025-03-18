@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proovedors",
+  "info": {
+    "singularName": "proovedor",
+    "pluralName": "proovedors",
+    "displayName": "proovedor"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "integer",
+      "max": 10
+    },
+    "correo": {
+      "type": "email"
+    },
+    "nombreContacto": {
+      "type": "string"
+    },
+    "productos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::producto.producto",
+      "mappedBy": "proovedor"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+POST http://localhost:1337/api/productos
+Content-Type: application/json
+
+
+{
+    "data": {
+        "nombreProducto": "Freidora de Aire",
+        "descripcion": "Freidora sin aceite con control de temperatura y temporizador",
+        "precio": 150,
+        "stock": 18,
+        "categorias": ["zu4fyr1d6x87by00fs0pc9wy"]
+    }
+}

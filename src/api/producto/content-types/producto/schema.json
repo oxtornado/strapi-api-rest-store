@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "productos",
+  "info": {
+    "singularName": "producto",
+    "pluralName": "productos",
+    "displayName": "producto",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombreProducto": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "precio": {
+      "type": "decimal"
+    },
+    "stock": {
+      "type": "biginteger"
+    },
+    "proovedor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::proovedor.proovedor",
+      "inversedBy": "productos"
+    },
+    "categorias": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::categoria.categoria",
+      "mappedBy": "producto"
+    }
+  }
+}

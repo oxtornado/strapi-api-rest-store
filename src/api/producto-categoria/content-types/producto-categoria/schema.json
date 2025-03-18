@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "producto_categorias",
+  "info": {
+    "singularName": "producto-categoria",
+    "pluralName": "producto-categorias",
+    "displayName": "productoCategoria"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "categorias": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::categoria.categoria",
+      "inversedBy": "producto_categorias"
+    }
+  }
+}
