@@ -1,13 +1,15 @@
-POST http://localhost:1337/api/productos
+GET http://localhost:1337/api/productos/ElectroMundo
+Accept: application/json
 Content-Type: application/json
 
 
 {
-    "data": {
-        "nombreProducto": "Freidora de Aire",
-        "descripcion": "Freidora sin aceite con control de temperatura y temporizador",
-        "precio": 150,
-        "stock": 18,
-        "categorias": ["zu4fyr1d6x87by00fs0pc9wy"]
-    }
+        "data": {
+            "nombre": "EcoDeportes",
+            "direccion": "Av. Verde 99, Ciudad Natural",
+            "telefono": "9988776655",
+            "correo": "contacto@ecodeportes.com",
+            "nombreContacto": "Fernando Salazar",
+            "productos": ["jp03576soriitwpywbx09yt2", "k8o0fmqwyz6h6rukj01g0y3q"]
+        }
 }

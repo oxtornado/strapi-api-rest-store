@@ -4,7 +4,8 @@
   "info": {
     "singularName": "proovedor",
     "pluralName": "proovedors",
-    "displayName": "proovedor"
+    "displayName": "proovedor",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,8 +18,7 @@
       "type": "string"
     },
     "telefono": {
-      "type": "integer",
-      "max": 10
+      "type": "string"
     },
     "correo": {
       "type": "email"

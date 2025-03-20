@@ -478,6 +478,7 @@ export interface ApiProductoProducto extends Struct.CollectionTypeSchema {
 export interface ApiProovedorProovedor extends Struct.CollectionTypeSchema {
   collectionName: 'proovedors';
   info: {
+    description: '';
     displayName: 'proovedor';
     pluralName: 'proovedors';
     singularName: 'proovedor';
@@ -501,13 +502,7 @@ export interface ApiProovedorProovedor extends Struct.CollectionTypeSchema {
     nombreContacto: Schema.Attribute.String;
     productos: Schema.Attribute.Relation<'oneToMany', 'api::producto.producto'>;
     publishedAt: Schema.Attribute.DateTime;
-    telefono: Schema.Attribute.Integer &
-      Schema.Attribute.SetMinMax<
-        {
-          max: 10;
-        },
-        number
-      >;
+    telefono: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

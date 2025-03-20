@@ -8,9 +8,10 @@ export default factories.createCoreController("api::categoria.categoria", ({ str
   async default(ctx) {
     try {
       const nombres = await strapi.service("api::categoria.categoria").getCategorias();
+      ctx.body = nombres;
       return ctx.send(nombres);
     } catch (error) {
-      ctx.throw(500, "Error obteniendo categorías");
+      ctx.throw(500, `Error obteniendo categorías: ${error.message}`);
     }
   },
   
